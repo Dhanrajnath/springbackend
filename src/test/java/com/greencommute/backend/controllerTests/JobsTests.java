@@ -80,8 +80,6 @@ class JobsTests {
         List<Skills> skillsList = new ArrayList<>();
         skillsList.add(skills);
         job.setSkillList(skillsList);
-        JobsDto jobDto = jobMapper.toJobsDto(job);
-        Optional<Jobs> jobsOptional = Optional.of(job);
         List<Jobs> jobsList = new ArrayList<>();
         jobsList.add(job);
         List<JobsDto> jobsDtoList = jobMapper.toJobDtoList(jobsList);
